@@ -1,0 +1,30 @@
+---
+import "./index.css";
+export interface Props {
+  image: string;
+  id: number;
+}
+
+const { image, id } = Astro.props;
+---
+
+<dev-control data-dev={id}>
+  <button>test</button>
+</dev-control>
+
+<script>
+  class DevControl extends HTMLElement {
+    constructor() {
+      super();
+
+      // Lee el mensaje del atributo data.
+      const devId = this.dataset.dev;
+      const button = this.querySelector("button");
+      button?.addEventListener("click", () => {
+        alert(devId);
+      });
+    }
+  }
+
+  customElements.define("dev-control", DevControl);
+</script>
