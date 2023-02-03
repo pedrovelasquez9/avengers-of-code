@@ -1,19 +1,16 @@
 import { useState } from "react";
+import { streamers } from "../../data/stremers";
 import { ReactControls } from "../ReactControls/ReactControls";
 import { ReactCard } from "./../ReactCard/ReactCard";
 
 export const Slide = () => {
   const [dev, setDev] = useState({});
-  const devs = [
-    { name: "test1", img: "test" },
-    { name: "test2", img: "test" },
-    { name: "test3", img: "test" },
-  ];
+  
 
   return (
     <>
       <ReactCard devInfo={dev} />
-      {devs.map((dev) => {
+      {streamers.map((dev) => {
         return <ReactControls handler={() => setDev(dev)} />;
       })}
     </>

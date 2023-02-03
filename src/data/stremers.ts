@@ -8,7 +8,7 @@ interface StreamerData {
     description: String;
 }
 
-const streamers: StreamerData[] = [
+export const streamers: StreamerData[] = [
     {
         name: "danirod_",
         web:"https://danirod.es/",
