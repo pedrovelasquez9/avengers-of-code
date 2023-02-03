@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import "./index.css";
 import Card from "../components/Card/Card.astro";
 import Controls from "../components/Controls/Controls.astro";
+import { Slide } from "../components/Slide/Slide";
 
 const devs = [
   { name: "test", img: "test" },
@@ -29,5 +30,6 @@ const controlHandler = (evt: any) => {
         })
       }
     </div>
+    <Slide client:visible />
   </main>
 </Layout>
