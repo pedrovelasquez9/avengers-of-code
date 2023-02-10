@@ -1,15 +1,30 @@
-.card-container {
-  width: 50%;
-  height: 30%;
-  border: 5px solid lightgray;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row;
+.green {
+  color: #1c8a0a;
 }
 
-.info-container {
-  width: 60%;
+.card-container {
+  background: linear-gradient(74.2deg, #35b1fb 10.74%, #0351b2 89.01%);
+  border: 3px solid #989898;
+
+  border-radius: 11px;
+  box-shadow: 6px 8px 6px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container .info-container {
+  padding: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 31px;
+}
+
+.card-container .info-container .social-container {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
 }
