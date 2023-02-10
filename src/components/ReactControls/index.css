@@ -1,0 +1,10 @@
+.control-btn {
+  background: transparent;
+  border: none;
+}
+
+.control-btn img {
+  width: 80px;
+  height: 80px;
+  border-radius: 36% 17% 64% 43%;
+}

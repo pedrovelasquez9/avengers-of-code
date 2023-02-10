@@ -1,7 +1,7 @@
+import type { StreamerData } from "../../data/interfaces";
 import "./index.css";
 
-export const ReactCard = ({ devInfo }: any) => {
-  console.log(devInfo);
+export const ReactCard = (devInfo: StreamerData) => {
   return (
     <div className="card-container">
       <div className="info-container">

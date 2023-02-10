@@ -3,17 +3,23 @@ import { streamers } from "../../data/stremers";
 import { ReactControls } from "../ReactControls/ReactControls";
 import { ReactCard } from "./../ReactCard/ReactCard";
 import "./index.css";
+import type { StreamerData } from "./../../data/interfaces";
 
 export const Slide = () => {
-  const [dev, setDev] = useState({});
+  const defaultStreamer = streamers[0];
+  const [dev, setDev] = useState(defaultStreamer);
 
   return (
     <>
-      <ReactCard devInfo={dev} />
+      <ReactCard {...dev} />
       <div className="controls-container">
-        {streamers.map((dev) => {
+        {streamers.map((dev: StreamerData) => {
           return (
-            <ReactControls key={Math.random()} handler={() => setDev(dev)} />
+            <ReactControls
+              key={Math.random()}
+              handler={() => setDev(dev)}
+              dev={dev}
+            />
           );
         })}
       </div>

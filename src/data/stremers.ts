@@ -1,12 +1,4 @@
-interface StreamerData {
-    name : String,
-    web: String,
-    GitHub: String,
-    YouTube: String,
-    specialty: string[],
-    avatar: String,
-    description: String;
-}
+import type { StreamerData } from "./interfaces";
 
 export const streamers: StreamerData[] = [
     {
@@ -51,7 +43,7 @@ export const streamers: StreamerData[] = [
         GitHub:"https://github.com/altaskur",
         specialty: ["Desarrollo web","Dev-hopping"],
         YouTube: "",
-        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/52283efe-be21-4000-b5c8-bab134e2cd92-profile_image-70x70.png",
+        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/52283efe-be21-4000-b5c8-bab134e2cd92-profile_image-150x150.png",
         description: "Cafetería central para streamers,Padre de Tanukis, trasteador de código sin saber muy bien que hace",
     }
     ,{
@@ -68,7 +60,7 @@ export const streamers: StreamerData[] = [
         GitHub:"https://github.com/nsdonato",
         specialty: ["Frontend"],
         YouTube: "https://www.youtube.com/@vamoacodear",
-        avatar:"./",
+        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/842aaa2a-4801-4096-9792-92fb3a7f5296-profile_image-150x150.png",
         description: "",
     },{
         name:"niv3k_el_pato",
@@ -76,7 +68,7 @@ export const streamers: StreamerData[] = [
         GitHub:"https://github.com/Niv3K-El-Pato",
         specialty: ["Desarrollo web","react","microservicios","azure","c#"],
         YouTube: "",
-        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/ef269242-c851-4d0b-b9db-0d959df33e1d-profile_image-70x70.png",
+        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/ef269242-c851-4d0b-b9db-0d959df33e1d-profile_image-150x150.png",
         description: "Invasor de la tierra, vengador de patos y master de *quack*",
     }
     ,{
@@ -85,7 +77,7 @@ export const streamers: StreamerData[] = [
         GitHub:"https://github.com/malpicado",
         specialty: ["Desarrollo web"],
         YouTube: "",
-        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/07412663-1350-4828-b613-63daf943dcc4-profile_image-70x70.png",
+        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/07412663-1350-4828-b613-63daf943dcc4-profile_image-150x150.png",
         description: "",
     }
     ,{
@@ -102,7 +94,7 @@ export const streamers: StreamerData[] = [
         GitHub:"",
         specialty: ["Desarrollo web", "Backend","PHP"],
         YouTube: "",
-        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/c00c87b1-b8b2-4b60-b6be-6f83a8c76c3c-profile_image-70x70.png",
+        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/c00c87b1-b8b2-4b60-b6be-6f83a8c76c3c-profile_image-150x150.png",
         description: "",
     },{
         name: "nurialiano",
@@ -110,7 +102,7 @@ export const streamers: StreamerData[] = [
         GitHub:"https://github.com/NuriaLiano",
         specialty: ["Desarrollo web", "Backend","PHP","Sistemas","Comer y dormir"],
         YouTube: "",
-        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/c00c87b1-b8b2-4b60-b6be-6f83a8c76c3c-profile_image-70x70.png",
+        avatar:"https://static-cdn.jtvnw.net/jtv_user_pictures/b2aa2cc5-b7cf-4c4f-ae1c-43dd10793def-profile_image-150x150.png",
         description: "sysadmin de plastilina",
     }
 ]
