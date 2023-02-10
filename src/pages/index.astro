@@ -1,8 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "./index.css";
-import Card from "../components/Card/Card.astro";
-import Controls from "../components/Controls/Controls.astro";
 import { Slide } from "../components/Slide/Slide";
 
 const devs = [
@@ -18,18 +16,6 @@ const controlHandler = (evt: any) => {
 
 <Layout title="Avengers of code">
   <main>
-    <Card
-      title="test"
-      description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dicta aliquid quasi sed adipisci, sint eligendi? Quisquam, ducimus aliquid odit facilis natus molestiae iusto. Commodi nulla cumque similique animi porro?"
-    />
-
-    <div class="controls-container">
-      {
-        devs.map((dev, index) => {
-          return <Controls id={index} image={dev.img} />;
-        })
-      }
-    </div>
     <Slide client:visible />
   </main>
 </Layout>
