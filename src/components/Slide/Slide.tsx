@@ -5,9 +5,14 @@ import { ReactCard } from "./../ReactCard/ReactCard";
 import "./index.css";
 import type { StreamerData } from "./../../data/interfaces";
 
+type devState = {
+  dev: StreamerData;
+  setDev: () => void;
+};
+
 export const Slide = () => {
-  const defaultStreamer = streamers[0];
-  const [dev, setDev] = useState(defaultStreamer);
+  const defaultStreamer: StreamerData = streamers[0];
+  const [dev, setDev] = useState<StreamerData>(defaultStreamer);
 
   return (
     <>
