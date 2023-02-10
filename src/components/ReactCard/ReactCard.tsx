@@ -19,17 +19,17 @@ export const ReactCard = (devInfo: StreamerData) => {
         </p>
         <ul>
           <li className="icon">
-            <a href={devInfo.GitHub} target="_blank" rel="noopener noreferrer">
+            <a href={devInfo.github} target="_blank" rel="noopener noreferrer">
               <i className="bi bi-github"></i>
             </a>
           </li>
           <li className="icon">
-            <a href={devInfo.YouTube} target="_blank" rel="noopener noreferrer">
+            <a href={devInfo.youtube} target="_blank" rel="noopener noreferrer">
               <i className="bi bi-youtube"></i>
             </a>
           </li>
           <li className="icon">
-            <a href={devInfo.Web} target="_blank" rel="noopener noreferrer">
+            <a href={devInfo.web} target="_blank" rel="noopener noreferrer">
               <i className="bi bi-globe"></i>
             </a>
           </li>
