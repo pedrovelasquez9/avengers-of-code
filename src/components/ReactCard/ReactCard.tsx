@@ -8,10 +8,13 @@ export const ReactCard = (devInfo: StreamerData) => {
         <h2>{devInfo.name}</h2>
         <p>
           {devInfo.specialty.map((specialty: string) => {
-            return `
-           <span className="green">[</span>
-           <span>"${specialty}"</span>
-           <span className="green">]</span>`;
+            return (
+              <>
+                <span className="green">[</span>
+                <span>"${specialty}"</span>
+                <span className="green">]</span>
+              </>
+            );
           })}
         </p>
         <ul>
