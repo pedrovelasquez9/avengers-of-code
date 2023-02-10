@@ -3,7 +3,7 @@
 }
 
 .card-container {
-  background: linear-gradient(74.2deg, #35b1fb 10.74%, #0351b2 89.01%);
+  background: linear-gradient(104.24deg, #eaeae8 8.72%, #d8d4d5 87.33%);
   border: 3px solid #989898;
 
   border-radius: 11px;
@@ -23,8 +23,12 @@
   gap: 31px;
 }
 
-.card-container .info-container .social-container {
+.card-container .info-container ul {
   display: flex;
   flex-direction: row;
   gap: 100px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
